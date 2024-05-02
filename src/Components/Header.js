@@ -3,7 +3,7 @@ import React from 'react'
 export default function Header() {
   return (
     <>
-        <h3>Password Generator</h3>
+        <h1>Password Generator</h1>
     </>
   )
 }

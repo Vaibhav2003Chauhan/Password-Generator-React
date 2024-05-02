@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 export default function Button({ password }) {
   const [copied, setCopied] = useState(false);
 
@@ -13,21 +14,16 @@ export default function Button({ password }) {
       });
   };
   let buttonText = 'Copy';
-  let buttonStyle = { backgroundColor: 'transparent', color: 'black' };
+  let buttonStyle = { backgroundColor: 'blue', color: 'white' };
   if (copied) {
     buttonText = 'Copied!';
     buttonStyle.backgroundColor = 'green';
-    buttonStyle.color = 'white';
+    buttonStyle.color = 'black';
   }
 
   return (
     <>
-      <button
-        onClick={copyToClipboard}
-        style={buttonStyle}
-      >
-        {buttonText}
-      </button>
+      <button onClick={copyToClipboard} style={buttonStyle} className='copyButton'>{buttonText}</button>
     </>
   );
 }

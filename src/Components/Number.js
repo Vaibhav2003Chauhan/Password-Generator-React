@@ -6,7 +6,7 @@ export default function Number(props) {
       <input type="checkbox" checked={props.numAllow} onChange={() => {
         props.setNumAllow((prev) => !prev)
       }} />
-      <label htmlFor="css">Number :</label>
+      <label htmlFor="css" className='numCheck'>Number</label>
     </>
   );
 }
